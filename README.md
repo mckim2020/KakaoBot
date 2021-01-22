@@ -14,22 +14,5 @@
 ### 3. 2번에 따라 연결된 링크의 code 뒷부분이 Access Token
 다음 코드에 따라 access token 과 refresh 토큰을 추출함
 
-  import requests
-  import json
-
-  url = "https://kauth.kakao.com/oauth/token"
-
-  data = {
-      "grant_type" : "authorization_code",
-      "client_id" : "<REST_API 앱키를 입력하세요>",
-      "redirect_uri" : "https://localhost.com",
-      "code"         : "<step2에서 발급받은 code를 입력하세요>"
-    
-  }
-  response = requests.post(url, data=data)
-
-  tokens = response.json()
-
-  print(tokens)
 
 ### 4. 
